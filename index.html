@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srujan B G | SAP ABAP  Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Srujan B G</div>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Hi, I'm <span>Srujan B G</span></h1>
+  <h2>Application Developer</h2>
+  <p>SAP ABAP | ABAP Cloud | SAP BTP | OData | CPI</p>
+  <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p class="content">
+    SAP ABAP Developer at IBM with 2 years of experience in backend development
+    and SAP cloud technologies. Experienced in ABAP Cloud, OData services,
+    SAP BTP integrations, and automation-driven enterprise solutions.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section light">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <span>ABAP</span>
+    <span>ABAP Cloud</span>
+    <span>OData</span>
+    <span>SAP BTP</span>
+    <span>SAP CPI</span>
+    <span>Cloud Connector</span>
+    <span>BAPIs</span>
+    <span>APIs</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Automation Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>User Access Management Automation</h3>
+      <p>Automated SAP user lock/unlock, password reset, and expiry handling using a unified OData service.</p>
+      <ul>
+        <li>User access automation</li>
+        <li>Password reset workflows</li>
+        <li>Rule-based backend logic</li>
+      </ul>
+      <p class="tech">ABAP · OData · BAPIs · SAP Security</p>
+    </div>
+
+    <div class="card">
+      <h3>User Lock Resolution Automation</h3>
+      <p>Developed backend automation to analyze user lock reasons and trigger resolution actions.</p>
+      <ul>
+        <li>Wrong password detection</li>
+        <li>Inactivity-based expiry</li>
+        <li>Policy validation</li>
+      </ul>
+      <p class="tech">ABAP · User Master · BAPIs</p>
+    </div>
+
+    <div class="card">
+      <h3>SAP BTP Cloud Connector Automation</h3>
+      <p>Enabled secure connectivity between on-prem SAP systems and SAP BTP for Fiori applications.</p>
+      <ul>
+        <li>Cloud Connector setup</li>
+        <li>Secure tunneling</li>
+        <li>OData consumption</li>
+      </ul>
+      <p class="tech">SAP BTP · SCC · Fiori · OData</p>
+    </div>
+
+    <div class="card">
+      <h3>SAP CPI Integration Automation</h3>
+      <p>Built CPI iFlows to automate system integrations using HTTP and OData adapters.</p>
+      <ul>
+        <li>Request–reply flows</li>
+        <li>Message routing</li>
+        <li>Monitoring</li>
+      </ul>
+      <p class="tech">SAP CPI · Integration Suite</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATION -->
+<section class="section light">
+  <h2>Certification</h2>
+  <p class="content">
+    SAP Certified Associate – Back-End Developer – ABAP Cloud
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <p>Email: <a href="mailto:your-email@example.com">srujanmani2001@gmail.com</a></p>
+    <p>Phone: <a href="tel:+91XXXXXXXXXX">+91-8951831602</a></p>
+    <p>
+      <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/your-username" target="_blank">GitHub</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Srujan B G | SAP ABAP & BTP Developer</p>
+</footer>
+
+<!-- JS FOR MENU -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+</script>
+
+</body>
+</html>
