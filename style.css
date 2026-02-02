@@ -26,6 +26,35 @@ body {
   align-items: center;
   z-index: 100;
 }
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #4fa3ff;
+  object-fit: cover;
+}
+
+.hero-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn.resume {
+  background: #28a745;
+}
+
+.resume-box {
+  text-align: center;
+  margin-top: 10px;
+}
 
 .logo {
   font-weight: bold;
