@@ -29,7 +29,7 @@
 
   <!-- PROFILE IMAGE -->
   <div class="profile-container">
-    <img src="profile.jpg" alt="Srujan Profile" class="profile-pic">
+    <img src="Srujan_profile.jpg" alt="Srujan Profile" class="profile-pic">
   </div>
 
   <h1>Hi, I'm <span>Srujan B G</span></h1>
@@ -79,7 +79,7 @@
     <span>ABAP</span>
     <span>ABAP Cloud</span>
     <span>OData</span>
-    <span>SAP BTP</span>
+    <!-- <span>SAP BTP</span> -->
     <span>SAP CPI</span>
     <span>Cloud Connector</span>
     <span>BAPIs</span>
@@ -88,56 +88,64 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Automation Projects</h2>
+<div class="projects">
 
-  <div class="projects">
-
-    <div class="card">
-      <h3>User Access Management Automation</h3>
-      <p>Automated SAP user lock/unlock, password reset, and expiry handling using a unified OData service.</p>
-      <ul>
-        <li>User access automation</li>
-        <li>Password reset workflows</li>
-        <li>Rule-based backend logic</li>
-      </ul>
-      <p class="tech">ABAP · OData · BAPIs · SAP Security</p>
-    </div>
-
-    <div class="card">
-      <h3>User Lock Resolution Automation</h3>
-      <p>Developed backend automation to analyze user lock reasons and trigger resolution actions.</p>
-      <ul>
-        <li>Wrong password detection</li>
-        <li>Inactivity-based expiry</li>
-        <li>Policy validation</li>
-      </ul>
-      <p class="tech">ABAP · User Master · BAPIs</p>
-    </div>
-
-    <div class="card">
-      <h3>SAP BTP Cloud Connector Automation</h3>
-      <p>Enabled secure connectivity between on-prem SAP systems and SAP BTP for Fiori applications.</p>
-      <ul>
-        <li>Cloud Connector setup</li>
-        <li>Secure tunneling</li>
-        <li>OData consumption</li>
-      </ul>
-      <p class="tech">SAP BTP · SCC · Fiori · OData</p>
-    </div>
-
-    <div class="card">
-      <h3>SAP CPI Integration Automation</h3>
-      <p>Built CPI iFlows to automate system integrations using HTTP and OData adapters.</p>
-      <ul>
-        <li>Request–reply flows</li>
-        <li>Message routing</li>
-        <li>Monitoring</li>
-      </ul>
-      <p class="tech">SAP CPI · Integration Suite</p>
-    </div>
-
+  <div class="card">
+    <h3>User Access Management Automation</h3>
+    <p>
+      Built a unified OData service for user access management by analyzing user status through USR02 and resolving lock
+      and password issues using standard SAP BAPIs (BAPI_USER_LOCK, BAPI_USER_UNLOCK, password reset BAPIs).
+    </p>
+    <ul>
+      <li>Automated user lock, unlock, and password reset operations</li>
+      <li>Real-time user status validation using USR02</li>
+      <li>Secure OData-based access management services</li>
+    </ul>
+    <p class="tech">ABAP · OData · BAPIs · SAP Security</p>
   </div>
+
+  <div class="card">
+    <h3>Transport Request Monitoring & Visibility Solution</h3>
+    <p>
+      Developed an OData service to provide transport request insights by consolidating tasks, object names, and descriptions,
+      enabling better visibility for developers and support teams.
+    </p>
+    <ul>
+      <li>End-to-end transport request tracking</li>
+      <li>Task, object, and description consolidation</li>
+      <li>Improved visibility for development and support teams</li>
+    </ul>
+    <p class="tech">ABAP · OData ·  SAP Development</p>
+  </div>
+
+  <div class="card">
+    <h3>SAP BTP Cloud Connector Automation</h3>
+    <p>
+      Enabled secure connectivity between on-premise SAP systems and SAP BTP for Fiori applications.
+    </p>
+    <ul>
+      <li>Configured secure on-premise to cloud connectivity</li>
+      <li>Enabled trusted RFC and HTTP tunneling</li>
+      <li>Supported OData exposure for BTP applications</li>
+    </ul>
+    <p class="tech">SAP BTP · Cloud Connector · Fiori · OData</p>
+  </div>
+
+  <div class="card">
+    <h3>SAP CPI Integration Automation</h3>
+    <p>
+      Built SAP CPI iFlows to automate system integrations using HTTP and OData adapters.
+    </p>
+    <ul>
+      <li>Designed request–reply and synchronous integrations</li>
+      <li>Implemented message routing and transformation logic</li>
+      <li>Monitored and troubleshot integration flows</li>
+    </ul>
+    <p class="tech">SAP CPI · Integration Suite · OData · HTTP</p>
+  </div>
+
+</div>
+
 </section>
 
 <!-- CERTIFICATION -->
@@ -183,6 +191,5 @@
 
 </body>
 </html>
-
 
 
